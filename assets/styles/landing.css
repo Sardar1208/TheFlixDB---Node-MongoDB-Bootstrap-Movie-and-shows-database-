@@ -1,0 +1,106 @@
+body{
+    background-color: #dec0f1;    
+}
+nav{
+    background-color: #9d4edd;
+    height: 10vh;
+}
+.link{
+    color: white !important;
+}
+.link:hover{
+    color: #212529 !important;
+}
+.nav-items{
+    font-size: large;
+}
+.sign-in,.sign-out {
+    color: white;
+}
+.main-text{
+    font-size: 3.5rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.search{
+    background-color: #efd9ce;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    padding-left: 1%;
+    outline: none;
+}
+.searchbtn{
+    margin-left: 0.5rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;   
+}
+.fav{
+    background-color:  #eff8ff;
+}
+.footer{
+    background-color: grey;
+    position: relative;   
+    bottom: 0;
+    text-decoration: none;
+}
+.foot-links{
+    text-decoration:none;
+    font-weight: bold;
+    color: white;
+}
+.foot-links:hover{
+    color: black;
+}
+section{
+    height: 90vh;
+}
+.view-page{
+    margin-left: 1rem;
+}
+.side-text{
+    overflow: hidden;
+    margin-left: 20%;
+}
+.search-results{
+    margin-left: 15%;
+    overflow: hidden;
+    opacity: 0%;
+    transform: translateY(10rem);
+}
+.search-heading{
+    font-size: 1.5rem;
+}
+.search-card{
+    padding: 0.25rem 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+.search-img{
+    height: 8rem;
+    width: 90%;
+}
+.search-title{
+    height: 2.5rem;
+    font-size: 50rem;
+}
+.search-year{
+    height: 2rem;
+    font-size: 0.8rem;
+}
+.card{
+    background-color:  #eff8ff;
+    overflow: hidden;
+    height: 13rem;
+    width: 10rem;
+    margin-right: 0.5rem;
+}
+.card:hover{
+    background-color: #a6a9b6 ;
+}
+.card-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}

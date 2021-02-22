@@ -1,0 +1,25 @@
+body{
+    background-color: #dec0f1;    
+}
+nav{
+    background-color: #9d4edd;
+    height: 10vh;
+}
+.link{
+    color: white !important;
+}
+.link:hover{
+    color: #212529 !important;
+}
+.details-page{
+    font-size: 1.2rem;
+    margin-top: 1.5rem; 
+}
+.main-content{
+    background-color:  #eff8ff;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.5rem;
+}
+.title{
+    font-size: 3rem;
+}

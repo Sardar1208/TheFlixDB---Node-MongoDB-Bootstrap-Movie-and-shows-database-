@@ -1,0 +1,46 @@
+html {
+    min-height: 100%;
+}
+body{
+    background-color: #dec0f1;    
+}
+nav{
+    background-color: #9d4edd;
+    height: 10vh;
+}
+.link{
+    color: white !important;
+}
+.link:hover{
+    color: #212529 !important;
+}
+.poster{
+    padding: 0.5rem 0.5rem;
+    height: 15rem;
+}
+.card-title{
+    font-size: 2rem;
+}
+.card-desc{
+    font-size: 1rem;
+}
+.card-body{
+    height: 100%;
+}
+.card-release{
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.card-rating{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+.card:nth-of-type(1){
+    margin-top: 1rem;
+}
+.card:hover .card-title{
+    text-decoration: underline;
+}
+

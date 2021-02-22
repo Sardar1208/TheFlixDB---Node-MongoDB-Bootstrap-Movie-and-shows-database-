@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/watchlist.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="shadow navbar navbar-expand-lg navbar-light text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-4 fw-bold" href="#">NAVBAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+                <div class="navbar-nav nav-items">
+                    <a class="nav-link link mx-2" href="/watchlist">WatchList</a>
+                    <form action="/login" method="GET" class="sign-in">
+                        <button class="nav-link btn btn-outline-success mx-4 btn-sm">Sign In</button>
+                    </form>
+                    <form action="/signout" method="POST" class="sign-out d-none">
+                        <button class="nav-link btn btn-outline-danger mx-4 btn-sm">Sign out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="empty-fav mt-5 d-none">
+        <div class="d-flex justify-content-center">
+            <img src="/svg/sad_face.svg" alt="">
+            <h1>Nothing in here</h1>
+            <a href="/"><button class="btn btn-danger" >Find Something</button></a>
+        </div>
+    </section>
+
+    <section class="row fav-section d-flex justify-content-center">
+        <!-- <div class="card mb-3 w-75">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/images/pic_2.jpg" alt="..." class="img-fluid poster">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, debitis deleniti.
+                            Laborum, tempore. Dolorum, perferendis. Natus, maxime eaque quisquam minus fugit soluta
+                            facilis tempore, dicta repudiandae sunt recusandae ipsam quaerat quis. Aliquam quam animi
+                            nesciunt doloribus.
+                        </p>
+                        <p class="card-release"></p>
+                        <p>IMDb : <span class="card-rating"></span></p>
+                        <button class="btn btn-secondary watchlistBtn">Add to WatchList</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <form action="/view" method="GET" class="view-form-fav"></form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="/scripts/get_user.js"></script>
+    <script src="/scripts/favourites.js"></script>
+</body>
+
+</html>
