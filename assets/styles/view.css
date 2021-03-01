@@ -23,3 +23,8 @@ nav{
 .title{
     font-size: 3rem;
 }
+.addToWLBtn{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}

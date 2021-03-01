@@ -117,4 +117,18 @@ async function searchfavItems(searchID) {
 }
 const bucketBtn = document.querySelector(".bucket-btn");
 
-getfav();
+async function initiate(){
+    // console.log("signed in user",await userID)
+    if(await userID != "not found"){
+        getfav();
+    }
+    else{
+        console.log("no");
+        window.location = "/login"
+        //display error msg
+    }
+}
+
+
+initiate();
+

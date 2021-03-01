@@ -17,13 +17,9 @@ const userSchema = new Schema({
     },
     fav: [{
         type: String,
-        unique: true,
-        required: true
     }],
     bucket: [{
         type: String,
-        unique: true,
-        required: true
     }]
 })
 

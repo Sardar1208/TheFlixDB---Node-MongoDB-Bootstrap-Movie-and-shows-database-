@@ -1,5 +1,9 @@
+html {
+    min-height: 100%;
+}
 body{
-    background-color: #dec0f1;    
+    background-color: #dec0f1;  
+    min-height: 1vh;
 }
 nav{
     background-color: #9d4edd;
@@ -15,6 +19,9 @@ nav{
     background-color:  #eff8ff;
     padding: 2rem 2rem;
     border-radius: 0.5rem;
+}
+.auth-sec{
+    margin-top: 3rem;
 }
 .auth-info{
     font-size: 1.5rem;

@@ -7,6 +7,7 @@ const resultSection = document.querySelector(".view-page");
 const mainPage = document.querySelector(".main-page");
 const viewHeading = document.querySelector(".view-heading");
 const searchPageResults = document.querySelector(".results");
+const footer = document.querySelector(".footer");
 
 
 // Extracts the query and calls the omdb api  for results.
@@ -15,6 +16,9 @@ async function search() {
         mainPage.classList.toggle("d-none");
     }
     resultSection.classList.remove("d-none");
+    if(!footer.classList.contains("d-none")){
+        footer.classList.add("d-none");
+    }
     // window.location.hash = "view-page";
 
     const query = searchbar.value;

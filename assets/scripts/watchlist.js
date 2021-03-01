@@ -117,4 +117,17 @@ async function searchwatchlistItems(searchID) {
 }
 const bucketBtn = document.querySelector(".bucket-btn");
 
-getWatchlist();
+async function initiate(){
+    // console.log("signed in user",await userID)
+    if(await userID != "not found"){
+        getWatchlist();
+    }
+    else{
+        console.log("no");
+        window.location = "/login"
+        //display error msg
+    }
+}
+
+
+initiate();

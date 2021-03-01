@@ -16,7 +16,7 @@ const User = db_data.user;
 
 
 //-------Mongoose----------
-mongoose.connect('mongodb://localhost:27017/users_test', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/newDB', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
@@ -265,8 +265,9 @@ app.post("/register", async (req, res) => {
     bcrypt.genSalt(10, function (err, salt) {
         bcrypt.hash(password, salt, async function (err, hash) {
             console.log(username, salt, hash);
-            const user = new User({ username: username, salt: salt, password: hash });
-            await user.save();
+            // const user = new User({ username: username, salt: salt, password: hash, fav:[],bucket:[] });
+            await User.create({ username: username, salt: salt, password: hash});
+            // await user.save();
             res.redirect("/");
         });
     });

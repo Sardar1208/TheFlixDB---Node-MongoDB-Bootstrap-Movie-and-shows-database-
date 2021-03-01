@@ -16,7 +16,7 @@
     <!-- navbar -->
     <nav class="shadow navbar navbar-expand-lg navbar-light text-light">
         <div class="container-fluid">
-            <a class="navbar-brand mx-4 fw-bold" href="#">NAVBAR</a>
+            <a class="navbar-brand mx-4 fw-bold" href="/">NAVBAR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,11 +25,12 @@
 
                 <div class="navbar-nav nav-items">
                     <a class="nav-link link mx-2" href="/watchlist">WatchList</a>
+                    <a class="nav-link link mx-2" href="/fav">Favourites</a>
                     <form action="/login" method="GET" class="sign-in">
                         <button class="nav-link btn btn-outline-success mx-4 btn-sm">Sign In</button>
                     </form>
                     <form action="/signout" method="POST" class="sign-out d-none">
-                        <button class="nav-link btn btn-outline-danger mx-4 btn-sm">Sign out</button>
+                        <button class="nav-link btn btn-danger mx-4 btn-sm text-light">Sign out</button>
                     </form>
                 </div>
             </div>
@@ -37,9 +38,9 @@
     </nav>
 
     <section class="empty-fav mt-5 d-none">
-        <div class="d-flex justify-content-center">
-            <img src="/svg/sad_face.svg" alt="">
-            <h1>Nothing in here</h1>
+        <div class="this">
+            <img src="/svg/sad_face.svg" alt="" width="200">
+            <h1 class="mx-auto">Nothing in here</h1>
             <a href="/"><button class="btn btn-danger" >Find Something</button></a>
         </div>
     </section>

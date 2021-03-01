@@ -43,4 +43,19 @@ nav{
 .card:hover .card-title{
     text-decoration: underline;
 }
+.this{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.this a{
+    text-decoration: none;
+}
+.this img, .this a button{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
 

@@ -61,8 +61,8 @@ async function checkBucket() {
     const x = await result;
 
     // Disables the bucketBtn until the server returns its state. 
-    if (!bucketBtn.classList.contains("d-none")) {
-        bucketBtn.classList.add("d-none");
+    if (!addToWLBtn.classList.contains("d-none")) {
+        addToWLBtn.classList.add("d-none");
     }
 
     // Send request to server for the state of bucketBtn
@@ -91,7 +91,7 @@ async function checkBucket() {
     }
 
     // Enables the bucketBtn again.
-    if (bucketBtn.classList.contains("d-none")) {
-        bucketBtn.classList.remove("d-none");
+    if (addToWLBtn.classList.contains("d-none")) {
+        addToWLBtn.classList.remove("d-none");
     }
 }
